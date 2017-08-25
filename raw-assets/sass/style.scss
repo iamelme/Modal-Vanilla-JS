@@ -1,0 +1,95 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: #f9f0db;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+* {
+  outline: none;
+  box-sizing: border-box;
+}
+
+.sample {
+  padding: 15px 0;
+  text-align: center;
+}
+
+.modal-btn {
+  display: inline-block;
+  padding: 9px 14px;
+  border: 0;
+  border-radius: 2px;
+  background: #efd0a1;
+  box-shadow: 0 0 5px rgba(0,0,0,.1);
+  cursor: pointer;
+  color: #867756;  
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all .3s;
+  animation: fadeEffect .3s;
+}
+
+.show {
+  display: block;  
+  opacity: 1;
+}
+
+.modal_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.1);
+}
+
+.modal_content {
+  position: relative;
+  top: 30%;
+  left: 50%;
+  z-index: 901;
+  max-width: 450px;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  box-shadow: 0 10px 55px rgba(0,0,0,.05);
+}
+
+.modal_close {
+  position: relative;
+  z-index: 999;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  background: crimson;
+  color: #fff;
+  cursor: pointer;
+}
+
+.modal__body {
+  padding: 0 15px;
+  
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
