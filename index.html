@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Modal using VanillaJS</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+	<div class="sample">
+	  <button class="modal-btn prevDef" id="first" data-modal-target="modal01">Click me</button>
+
+	  <button class="modal-btn prevDef" data-modal-target="modal02">Click me again</button>
+	</div>
+
+	<div class="modal" id="modal01">
+	   
+	  <div class="modal_overlay">    
+	  </div>
+	  <div class="modal_content">
+	    <div class=""> <button class="modal_close prevDef">x</button></div>
+	    <div class="modal__body">
+	        <button class="modal-btn prevDef" data-modal-target="modal02">Click me again</button>
+	      <p>Modal 1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda iusto corrupti debitis, enim ea neque fuga facere adipisci excepturi? Provident recusandae inventore placeat. Expedita veniam laboriosam laudantium, sed explicabo reiciendis!</p>
+
+	    </div>
+	  </div>
+	</div>
+
+	<div class="modal" id="modal03">
+	   
+	  <div class="modal_overlay">    
+	  </div>
+	  <div class="modal_content">
+	    <div class=""> <button class="modal_close prevDef">x</button></div>
+	    <div class="modal__body">        
+	      <p>Modal 3 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda iusto corrupti debitis, enim ea neque fuga facere adipisci excepturi? Provident recusandae inventore placeat. Expedita veniam laboriosam laudantium, sed explicabo reiciendis!</p>
+
+	    </div>
+	  </div>
+	</div>
+
+
+
+	<div class="modal" id="modal02">
+	   
+	  <div class="modal_overlay">    
+	  </div>
+	  <div class="modal_content">
+	    <div class=""> <button class="modal_close prevDef">x</button></div>
+	    <div class="modal__body">
+	      <button class="modal-btn prevDef" data-modal-target="modal03">Click modal 3</button>
+	      <p>Modal 2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda iusto corrupti debitis, enim ea neque fuga facere adipisci excepturi? Provident recusandae inventore placeat. Expedita veniam laboriosam laudantium, sed explicabo reiciendis!</p>
+	    </div>
+	  </div>
+	</div>
+	
+	<script src="assets/js/main.js"></script>
+</body>
+</html>

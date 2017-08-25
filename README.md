@@ -1,0 +1,1 @@
+Modal using plain JS
